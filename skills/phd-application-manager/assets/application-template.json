@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "case_id": null,
+  "app_id": null,
+  "phase": "not_started",
+  "observed_context": {
+    "portal_url": null,
+    "institution": null,
+    "program": null,
+    "entry_term": null,
+    "entry_year": null,
+    "verified_at": null
+  },
+  "account": {
+    "status": "unknown",
+    "email_field_ref": null
+  },
+  "requirements": [],
+  "field_checks": [],
+  "supplements": [],
+  "files": [],
+  "blockers": [],
+  "last_verified_at": null,
+  "save_evidence": null
+}
