@@ -1,0 +1,4 @@
+interface:
+  display_name: "PhD 申请管理与审核"
+  short_description: "统筹个人资料与网申执行，集中处理人工审核，并跟踪申请草稿进度"
+  default_prompt: "使用 $phd-application-manager，根据我提供的项目名单收集必要信息、协调填表和人工审核，首次测试做到保存草稿。"
