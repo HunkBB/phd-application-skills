@@ -1,0 +1,13 @@
+# Keep personal application records and local validation files out of this public repository.
+/phd-applications/
+/.validation/
+**/case.json
+**/profile.json
+**/reviews.json
+**/application.json
+.env
+.env.*
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
