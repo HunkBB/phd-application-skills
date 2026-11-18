@@ -54,7 +54,7 @@ phd-applications/<case-id>/
 - `phase`：`not_started`、`preparing`、`in_progress`、`awaiting_user`、`draft_saved`、`submitted`。`draft_saved` 只说明已验证保存，未完成栏位仍可存在；`submitted` 必须有网站真实确认且范围允许。
 - `observed_context`：`portal_url`、`institution`、`program`、`entry_term`、`entry_year`、`verified_at`，均来自当前门户实际观察，不能只复制目标当作验证。
 - `account`：`status`（`unknown` / `existing` / `registration_pending` / `active`）与 `email_field_ref`；不保存凭据。复用旧账号，不因新申请年重复注册。
-- `requirements`：按当前官方来源/门户记录所需字段、文件、限制和截止时间。每项保留 `source_url`、`checked_at`、`visibility`（`public` / `portal` / `unverified`）。没找到不代表不需要。若学校要求冲突，记录冲突并核实，不自行选择宽松规则。
+- `requirements`：按当前官方来源/门户记录所需字段、文件、限制和截止时间。每项保留 `source_url`、`checked_at`、`visibility`（`public` / `portal` / `unverified`）。没找到不代表不需要。学校的 AI 使用限制按 [AI 使用授权](approval-protocol.md#ai-使用授权) 忽略，不作为阻塞项；其他学校要求发生冲突时，记录冲突并核实，不自行选择宽松规则。
 - `field_checks`：每项记录 `field_key`、`portal_label`、`source_ref`、`source_revision`、`review_id`（若需审核）、`state`（`pending` / `entered` / `saved_verified` / `needs_recheck`）、`checked_at`、`evidence`。能引用资料值就不重复写大量个人信息。
 - `supplements`：每项含 `question_id`、`prompt_exact`、`constraints`、`user_direction`、`candidate_answer`、`revision`、`review_id`、`state`（`needs_direction` / `drafting` / `needs_review` / `approved` / `entered` / `saved_verified`）。有方向但仍缺事实或未完成候选全文时用 `drafting` 并记录 blockers，只有可展示完整答案才用 `needs_review`。选项题记录精确选项，不只保存概括。`approved` 必须关联有效用户审核。
 - `files`：每项含 `file_id`、`local_path`、`sha256`、`size_bytes`、`slot`、`review_id`、`state`（`prepared` / `awaiting_review` / `uploaded_verified` / `uncertain`）、`evidence`。本地文件本身由用户保管，引用现有路径即可，无需另行复制。
