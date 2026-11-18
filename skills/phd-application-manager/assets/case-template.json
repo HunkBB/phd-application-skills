@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "case_id": null,
+  "target": {
+    "degree": "PhD",
+    "discipline": null,
+    "research_interests": [],
+    "entry_term": null,
+    "entry_year": null
+  },
+  "projects": [],
+  "execution": {
+    "mode": "draft_only",
+    "active_app_id": null,
+    "ordinary_entry_scope": null
+  },
+  "profile_revision": 0
+}
