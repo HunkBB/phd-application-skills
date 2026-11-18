@@ -1,0 +1,4 @@
+interface:
+  display_name: "PhD 个人资料"
+  short_description: "整理和核验多校网申个人资料，补齐缺失信息并准备待审核的项目回答"
+  default_prompt: "请使用 $phd-applicant-profile 整理本申请案已提供的个人资料，按给定项目列出缺失信息，并准备需要我审核的补充回答。"
