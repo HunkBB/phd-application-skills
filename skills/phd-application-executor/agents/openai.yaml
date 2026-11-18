@@ -1,0 +1,4 @@
+interface:
+  display_name: "PhD 网申执行"
+  short_description: "注册或复用网申账号，填写并核验草稿，在文件上传和项目回答前交由用户审核"
+  default_prompt: "使用 $phd-application-executor 继续指定项目的网申，依据已确认资料填写并保存草稿，按审核协议处理文件与补充问题。"
